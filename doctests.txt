@@ -1,0 +1,25 @@
+# doctests
+
+>>> from main import *
+
+>>> HashTable().hash('golf')
+424
+
+>>> ht1 = HashTable()
+>>> ht1.add('golf', 'sport')
+>>> 424 in ht1.collection
+True
+>>> ht1.lookup('golf')
+'sport'
+
+>>> ht2 = HashTable()
+>>> ht2.add('rose', 'flower')
+>>> print(ht2.collection)
+{441: {'rose': 'flower'}}
+
+>>> ht3 = HashTable()
+>>> ht3.add('fcc', 'coding')
+>>> ht3.add('cfc', 'chemical')
+>>> print(ht3.collection)
+{300: {'fcc': 'coding', 'cfc': 'chemical'}}
+
